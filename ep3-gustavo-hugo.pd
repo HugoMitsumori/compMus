@@ -1,6 +1,6 @@
-#N canvas 811 281 1087 521 10;
+#N canvas 3312 65 1123 510 10;
 #X msg 206 13 abrir arquivo MIDI;
-#N canvas 832 519 450 424 lerMIDI 0;
+#N canvas 2630 826 381 496 lerMIDI 0;
 #X obj 32 109 openpanel;
 #X obj 31 277 unpack;
 #X obj 105 226 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -58,7 +58,7 @@
 #X connect 22 0 11 0;
 #X connect 23 0 22 0;
 #X restore 206 68 pd lerMIDI;
-#N canvas 224 379 558 507 VCO 0;
+#N canvas 2295 814 558 507 VCO 0;
 #X obj 29 12 inlet;
 #X obj 152 235 outlet;
 #X obj 262 246 outlet;
@@ -72,12 +72,11 @@
 #X floatatom 133 121 5 0 0 0 - - -, f 5;
 #X obj 79 238 outlet~;
 #X obj 70 262 tabwrite~ wave;
-#X obj 5 193 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+#X obj 5 193 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 176 13 inlet;
 #X obj 200 44 s bg;
 #X obj 5 217 metro 100;
-#X obj 123 327 dac~;
 #X connect 0 0 3 0;
 #X connect 0 0 8 0;
 #X connect 4 0 1 0;
@@ -89,26 +88,25 @@
 #X connect 8 1 9 1;
 #X connect 9 0 11 0;
 #X connect 9 0 12 0;
-#X connect 9 0 17 0;
-#X connect 9 0 17 1;
 #X connect 13 0 16 0;
 #X connect 14 0 15 0;
 #X connect 16 0 12 0;
 #X restore 323 133 pd VCO;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array wave 100 float 1;
-#A 0 9.00197 9.05809 9.11421 9.17034 9.22646 9.28258 9.3387 9.39483
-9.45095 9.50707 9.56319 9.61932 9.67544 9.73156 9.78768 9.84381 9.89993
-9.95605 10.0122 10.0683 10.1244 10.1805 10.2367 10.2928 10.3489 10.405
-10.4612 10.5173 10.5734 10.6295 10.6856 10.7418 10.7979 10.854 10.9101
-10.9663 11.0224 11.0785 11.1346 11.1907 11.2469 0.0529893 0.109112
-0.165234 0.221357 0.277479 0.333602 0.389724 0.445846 0.501969 0.558091
-0.614214 0.670336 0.726459 0.782581 0.838704 0.894826 0.950948 1.00707
-1.06319 1.11932 1.17544 1.23156 1.28768 1.34381 1.39993 1.45605 1.51217
-1.5683 1.62442 1.68054 1.73666 1.79279 1.84891 1.90503 1.96115 2.01728
-2.0734 2.12952 2.18564 2.24176 2.29789 2.35401 2.41013 2.46625 2.52238
-2.5785 2.63462 2.69074 2.74687 2.80299 2.85911 2.91523 2.97136 3.02748
-3.0836 3.13972 3.19585 3.25197 3.30809;
+#A 0 0.527135 0.536552 0.545969 0.555386 0.564803 0.574219 0.583636
+0.593053 0.60247 0.611886 0.621303 0.000798523 0.0102153 0.019632 0.0290488
+0.0384655 0.0478823 0.057299 0.0667158 0.0761326 0.0855493 0.0949661
+0.104383 0.1138 0.123216 0.132633 0.14205 0.151467 0.160883 0.1703
+0.179717 0.189134 0.19855 0.207967 0.217384 0.226801 0.236217 0.245634
+0.255051 0.264468 0.273884 0.283301 0.292718 0.302135 0.311551 0.320968
+0.330385 0.339802 0.349218 0.358635 0.368052 0.377469 0.386885 0.396302
+0.405719 0.415136 0.424552 0.433969 0.443386 0.452803 0.462219 0.471636
+0.481053 0.49047 0.499886 0.509303 0.51872 0.528137 0.537553 0.54697
+0.556387 0.565804 0.57522 0.584637 0.594054 0.603471 0.612887 0.622304
+0.00179972 0.0112165 0.0206332 0.03005 0.0394667 0.0488835 0.0583002
+0.067717 0.0771337 0.0865505 0.0959672 0.105384 0.114801 0.124218 0.133634
+0.143051 0.152468 0.161885 0.171301 0.180718 0.190135 0.199552;
 #X coords 0 10 100 -1 200 140 1 0 0;
 #X restore 833 24 graph;
 #X msg 257 39 stop;
@@ -119,7 +117,7 @@
 663.438 704.688;
 #X coords 0 880 20 55 200 80 1 0 0;
 #X restore 569 20 graph;
-#N canvas 173 300 522 319 sequenciador 0;
+#N canvas 2045 900 486 386 sequenciador 0;
 #X obj 38 300 outlet;
 #X obj 161 301 outlet;
 #X obj 38 259 pack f f;
@@ -187,7 +185,7 @@
 #X text 48 79 sequenciador;
 #X obj 23 104 s controle;
 #X obj 4 39 loadbang;
-#N canvas 876 415 450 300 multiplexer1 1;
+#N canvas 116 122 450 300 multiplexer1 0;
 #X obj 97 7 inlet;
 #X obj 36 7 inlet;
 #X obj 246 8 inlet;
@@ -216,9 +214,110 @@
 #X connect 12 0 10 1;
 #X connect 12 0 11 1;
 #X restore 292 98 pd multiplexer1;
+#N canvas 3152 722 678 516 ADSR 0;
+#X obj 166 392 vline~;
+#X obj 35 35 inlet~;
+#X text 1 17 sinal sintetizado;
+#X obj 166 36 inlet;
+#X text 114 18 amplitude de pico/frequência;
+#X obj 315 39 inlet;
+#X text 292 19 final de nota;
+#X text 461 180 Soltura;
+#X text 461 160 Decaimento;
+#X text 461 140 Ataque;
+#X obj 405 160 nbx 5 14 0 20000 0 0 ADSR-D empty empty 0 -8 0 10 -262144
+-1 -1 20 256;
+#X obj 405 180 nbx 5 14 0 20000 0 0 ADSR-R empty empty 0 -8 0 10 -262144
+-1 -1 800 256;
+#X obj 405 140 nbx 5 14 0 20000 0 0 ADSR-A empty empty 0 -8 0 10 -262144
+-1 -1 80 256;
+#X obj 166 178 unpack f f;
+#X text 458 124 Duracao em ms;
+#X obj 408 198 hsl 48 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2390 1;
+#X text 461 198 Amplitude;
+#X text 461 209 de Sustentacao;
+#X obj 324 79 loadbang;
+#X msg 371 123 80;
+#X msg 355 143 20;
+#X msg 339 162 40;
+#X floatatom 405 213 5 0 0 0 - - ADSR-S, f 5;
+#X obj 298 76 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 166 205 t f f;
+#X obj 166 296 pack f f f f;
+#X obj 189 256 r ADSR-A;
+#X obj 193 227 *;
+#X obj 208 206 r ADSR-S;
+#X obj 235 275 r ADSR-D;
+#X text 173 314 Ataque e Decaimento;
+#N canvas 2975 600 450 250 (subpatch) 0;
+#X array ADSR-ENV 500 float 2;
+#X coords 0 0 500 1 140 100 1 0 0;
+#X restore 405 245 graph;
+#X obj 312 204 samplerate~;
+#X obj 324 102 t b b b b b;
+#X msg 283 226 \; ADSR-ENV resize \$1;
+#X obj 190 460 tabwrite~ ADSR-ENV;
+#X obj 223 431 metro 100;
+#X obj 223 411 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 315 58 s ADSR-FIM;
+#X obj 328 288 r ADSR-FIM;
+#X msg 328 370 0 \$1;
+#X obj 328 343 f;
+#X obj 343 312 r ADSR-R;
+#X obj 69 364 *~;
+#X obj 135 361 print;
+#X msg 166 332 0 \, \$1 \$2 \, \$3 \$4 \$2;
+#X msg 324 181 0.5;
+#X text 285 445 TODO: o display do envelope ta bugado;
+#X obj 62 437 outlet~;
+#X connect 0 0 35 0;
+#X connect 0 0 43 1;
+#X connect 1 0 43 0;
+#X connect 3 0 13 0;
+#X connect 5 0 38 0;
+#X connect 13 1 24 0;
+#X connect 15 0 22 0;
+#X connect 18 0 33 0;
+#X connect 19 0 12 0;
+#X connect 20 0 10 0;
+#X connect 21 0 11 0;
+#X connect 23 0 33 0;
+#X connect 24 0 25 0;
+#X connect 24 1 27 0;
+#X connect 25 0 45 0;
+#X connect 26 0 25 1;
+#X connect 27 0 25 2;
+#X connect 28 0 27 1;
+#X connect 29 0 25 3;
+#X connect 32 0 34 0;
+#X connect 33 0 32 0;
+#X connect 33 1 46 0;
+#X connect 33 2 21 0;
+#X connect 33 3 20 0;
+#X connect 33 4 19 0;
+#X connect 36 0 35 0;
+#X connect 37 0 36 0;
+#X connect 39 0 41 0;
+#X connect 40 0 0 0;
+#X connect 40 0 44 0;
+#X connect 41 0 40 0;
+#X connect 42 0 41 1;
+#X connect 43 0 48 0;
+#X connect 45 0 0 0;
+#X connect 45 0 44 0;
+#X connect 46 0 15 0;
+#X coords 0 -1 1 1 150 250 1 400 100;
+#X restore 322 185 pd ADSR;
+#X obj 321 460 dac~;
 #X connect 0 0 1 0;
 #X connect 1 0 17 0;
 #X connect 1 1 17 1;
+#X connect 2 0 18 0;
+#X connect 2 1 18 1;
+#X connect 2 2 18 2;
 #X connect 4 0 1 1;
 #X connect 6 0 17 2;
 #X connect 6 1 17 3;
@@ -227,3 +326,5 @@
 #X connect 16 0 11 0;
 #X connect 17 0 2 0;
 #X connect 17 1 2 1;
+#X connect 18 0 19 0;
+#X connect 18 0 19 1;
