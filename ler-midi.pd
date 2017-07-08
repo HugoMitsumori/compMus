@@ -1,0 +1,73 @@
+#N canvas 1092 368 450 498 10;
+#X obj 31 109 openpanel;
+#X obj 31 277 unpack;
+#X obj 164 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 63 166 read \$1;
+#X obj 31 139 t b s;
+#X obj 31 200 cyclone/seq;
+#X obj 31 247 cyclone/midiparse;
+#X msg 129 171 stop;
+#X obj 31 303 stripnote;
+#X obj 31 335 mtof;
+#X obj 30 409 outlet;
+#X obj 31 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 145 294 sel 0;
+#X obj 177 325 / 127;
+#X obj 145 402 outlet;
+#X obj 145 357 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 97 32 r controle;
+#X obj 97 84 sel 1;
+#X msg 31 35 0;
+#X obj 31 8 r open;
+#X obj 139 145 r stop;
+#X obj 30 376 pack f f;
+#X obj 86 338 f 0;
+#X obj 31 61 sel;
+#X text 155 277 (velocity == 0) => NOTE_OFF;
+#X obj 201 101 cnv 15 168 58 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X obj 205 122 bng 15 250 50 0 open empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 205 142 bng 15 250 50 0 stop empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 229 123 abrir arquivo MIDI;
+#X text 230 141 parar;
+#X text 202 101 Leitor de arquivo MIDI;
+#X obj 10 356 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 4 0;
+#X connect 1 0 8 0;
+#X connect 1 1 8 1;
+#X connect 1 1 12 0;
+#X connect 2 0 22 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 0;
+#X connect 4 1 3 0;
+#X connect 5 0 6 0;
+#X connect 5 1 2 0;
+#X connect 6 0 1 0;
+#X connect 7 0 5 0;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 9 0 21 1;
+#X connect 9 0 31 0;
+#X connect 11 0 0 0;
+#X connect 12 0 15 0;
+#X connect 12 1 13 0;
+#X connect 13 0 21 0;
+#X connect 15 0 14 0;
+#X connect 16 0 17 0;
+#X connect 16 0 23 1;
+#X connect 17 1 7 0;
+#X connect 18 0 23 0;
+#X connect 19 0 18 0;
+#X connect 20 0 7 0;
+#X connect 21 0 10 0;
+#X connect 22 0 21 1;
+#X connect 22 0 21 0;
+#X connect 23 0 11 0;
+#X connect 31 0 21 0;
+#X coords 0 -1 1 1 170 60 1 200 100;

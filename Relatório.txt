@@ -1,0 +1,37 @@
+Hugo Mitsumori		8941262
+Gustavo Caparica 	7991020
+
+Módulos implementados:
+- Controle: Leitor de arquivo MIDI e sequenciador
+- Sintese: VCO, Sintese FM e Sintese aditiva
+- Envelope: ADSR
+- Efeitos: FIR, auto Wah
+
+
+Implementação:
+
+Leitor de MIDI: 
+- baseado no arquivo fornecido como exemplo no PACA. 
+- Modificado para calcular a amplitude pelo parâmetro velocity	
+- Modificado para ser sincronizado com controles externos e saída especificada
+
+Sequenciador:
+- baseado no exemplo C08 do pD
+- adicionados controles interativos de duração e altura e seus respectivos cálculos
+
+VCO:
+- Baseado no tutorial de waveshaping http://www.pd-tutorial.com/english/ch03s05.html
+- Uso de oversampling para antialiasing 
+- Uso de controles de seleção de shape, interação externa e sincronização
+
+sintese FM
+- baseado no exemplo fornecido no PACA
+- Adicionado controle de uso da amplitude de entrada
+
+Sintese aditiva(Fourier)
+- baseado no exemplo D08
+
+Auto wah
+- Baseado no tutorial https://guitarextended.wordpress.com/2012/01/07/wha-wha-auto-with-pure-data/
+- Adicionado controle dry/wet 
+
