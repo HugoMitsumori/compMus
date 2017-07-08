@@ -5,7 +5,7 @@ Módulos implementados:
 - Controle: Leitor de arquivo MIDI e sequenciador
 - Sintese: VCO, Sintese FM e Sintese aditiva
 - Envelope: ADSR
-- Efeitos: FIR, auto Wah
+- Efeitos: FIR, auto Wah, Phaser
 
 
 Implementação:
@@ -30,6 +30,13 @@ sintese FM
 
 Sintese aditiva(Fourier)
 - baseado no exemplo D08
+
+ADSR
+- Baseado no exemplo D02.adsr.pd do Pd
+- Dificuldades em mostrar o envelope
+
+FIR
+- Baseado no help do [iemlib/FIR~]
 
 Auto wah
 - Baseado no tutorial https://guitarextended.wordpress.com/2012/01/07/wha-wha-auto-with-pure-data/
