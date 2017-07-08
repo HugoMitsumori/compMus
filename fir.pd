@@ -1,4 +1,4 @@
-#N canvas 790 96 679 430 10;
+#N canvas 3203 35 634 1381 10;
 #X obj 20 28 inlet~;
 #X obj 20 328 outlet~;
 #X obj 184 29 inlet;
@@ -15,14 +15,14 @@
 #X obj 61 215 iemlib/FIR~ FIR-coefs 100;
 #X obj 418 96 bng 15 250 50 0 fir-carrega empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 441 96 Carregar coeficientes;
+#X text 433 95 Carregar coeficientes;
 #N canvas 0 50 450 278 (subpatch) 0;
-#X array FIR-coefs 1 float 2;
-#X coords 0 1 1 -1 180 70 1 0 0;
+#X array FIR-coefs 256 float 2;
+#X coords 0 1 256 -1 160 70 1 0 0;
 #X restore 410 193 graph;
 #X obj 418 117 bng 15 250 50 0 fir-limpa empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 442 118 Limpar coeficientes;
+#X text 434 117 Limpar coeficientes;
 #X obj 229 186 r fir-limpa;
 #X obj 240 208 loadbang;
 #X msg 247 280 1;
@@ -33,12 +33,12 @@
 #X msg 228 324 \; FIR-coefs const 1;
 #N canvas 0 50 450 278 (subpatch) 0;
 #X array FIR-resposta 22050 float 2;
-#X coords 0 5 22050 -1 180 70 1 0 0;
+#X coords 0 5 22050 -1 160 70 1 0 0;
 #X restore 410 288 graph;
-#X obj 422 154 hsl 150 15 0 1 0 0 FIR-mix empty empty -2 -8 0 10 -262144
+#X obj 422 154 hsl 130 15 0 1 0 0 FIR-mix empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X text 417 137 Dry;
-#X text 552 137 Wet;
+#X text 532 137 Wet;
 #X obj 46 90 r FIR-mix;
 #X obj 46 112 expr 1 - $f1;
 #X obj 20 50 s~ FIR-sinal;
@@ -76,6 +76,7 @@
 #X obj 118 282 r fir-size;
 #X text 432 4 Hugo Mitsumori // 8 9 4 1 2 6 2;
 #X text 418 22 Gustavo Caparica // 7 9 9 1 0 2 0;
+#X text 482 73 FIR;
 #X connect 0 0 33 0;
 #X connect 6 0 7 0;
 #X connect 7 0 9 0;
@@ -100,4 +101,4 @@
 #X connect 38 0 39 1;
 #X connect 39 0 1 0;
 #X connect 41 0 40 0;
-#X coords 0 -1 1 1 200 300 1 400 70;
+#X coords 0 -1 1 1 180 300 2 400 70;

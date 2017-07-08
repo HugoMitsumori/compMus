@@ -1,4 +1,4 @@
-#N canvas 528 232 450 300 10;
+#N canvas 3422 389 450 300 10;
 #X obj 117 5 loadbang;
 #X obj 111 103 r f0;
 #X obj 84 140 *;
@@ -14,6 +14,10 @@
 #X obj 57 1 r b1;
 #X obj 120 34 f \$1;
 #X obj 102 66 f;
+#X obj 184 156 array sum amplitude-parciais;
+#X obj 157 127 t f b;
+#X obj 157 189 /~;
+#X text 158 207 normaliza o peso para não ocorrer clipping;
 #X connect 0 0 12 0;
 #X connect 1 0 2 0;
 #X connect 1 0 9 0;
@@ -21,10 +25,14 @@
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
 #X connect 5 0 8 0;
-#X connect 6 0 5 1;
+#X connect 6 0 15 0;
 #X connect 7 0 2 1;
 #X connect 9 0 10 0;
 #X connect 11 0 13 0;
 #X connect 12 0 13 1;
 #X connect 13 0 6 0;
 #X connect 13 0 7 0;
+#X connect 14 0 16 1;
+#X connect 15 0 16 0;
+#X connect 15 1 14 0;
+#X connect 16 0 5 1;
