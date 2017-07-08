@@ -2,7 +2,7 @@
 #X obj 37 439 outlet;
 #X obj 168 393 outlet;
 #X obj 37 80 metro;
-#X obj 37 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 2 1
+#X obj 37 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
 ;
 #X obj 37 113 f;
 #X obj 39 292 tabread sequencia;
@@ -27,9 +27,9 @@
 #X floatatom 259 275 5 0 0 2 - - bpm, f 5;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array sequencia 20 float 3;
-#A 0 488.125 385 591.25 766.563 539.688 766.563 684.063 684.063 653.125
-622.188 580.938 550 333.438 85.9375 209.688 374.688 570.625 539.688
-271.563 250.938;
+#A 0 488.125 663.438 632.5 580.938 529.375 446.875 405.625 684.063
+580.938 498.438 580.938 240.625 580.938 580.938 539.688 281.875 570.625
+539.688 271.563 250.938;
 #X coords 0 880 20 55 200 80 1 0 0;
 #X restore 257 314 graph;
 #N canvas 0 50 450 250 (subpatch) 0;
@@ -63,6 +63,8 @@ tabela for diferente do anterior. Caso contrário \, deixa a nota soar
 ;
 #X obj 36 387 unpack f f;
 #X obj 37 415 pack f f;
+#X text 681 10 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 667 28 Gustavo Caparica // 7 9 9 1 0 2 0;
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
 #X connect 3 0 6 0;

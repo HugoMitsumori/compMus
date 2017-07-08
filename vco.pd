@@ -40,6 +40,10 @@
 #X obj 349 280 r a-f;
 #X obj 178 105 *;
 #X obj 197 78 == 0;
+#X text 421 1 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 407 19 Gustavo Caparica // 7 9 9 1 0 2 0;
+#X text 280 355 anti-aliasing;
+#X text 410 393 oversampling;
 #X connect 0 0 6 0;
 #X connect 0 0 35 0;
 #X connect 3 0 2 0;

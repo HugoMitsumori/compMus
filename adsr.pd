@@ -57,6 +57,8 @@
 #X msg 355 143 40;
 #X msg 339 162 10;
 #X msg 324 181 0.3;
+#X text 413 27 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 399 45 Gustavo Caparica // 7 9 9 1 0 2 0;
 #X connect 0 0 31 0;
 #X connect 0 0 39 1;
 #X connect 1 0 39 0;

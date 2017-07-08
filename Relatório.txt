@@ -35,3 +35,8 @@ Auto wah
 - Baseado no tutorial https://guitarextended.wordpress.com/2012/01/07/wha-wha-auto-with-pure-data/
 - Adicionado controle dry/wet 
 
+Phaser
+- baseado no exemplo H15
+- Adicionados mais sinais para aumentar o nível do efeito
+- adicionados controles interativos para variação do efeito
+

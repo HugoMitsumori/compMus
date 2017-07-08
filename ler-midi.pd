@@ -38,6 +38,9 @@
 #X text 202 101 Leitor de arquivo MIDI;
 #X obj 10 356 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X text 197 8 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 183 26 Gustavo Caparica // 7 9 9 1 0 2 0;
+#X text 78 431 implementação baseada no exemplo fornecido;
 #X connect 0 0 4 0;
 #X connect 1 0 8 0;
 #X connect 1 1 8 1;

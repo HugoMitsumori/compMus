@@ -43,6 +43,10 @@
 #X coords 0 1 19 0 200 140 1 0 0;
 #X restore 309 102 graph;
 #X text 307 52 Síntese aditiva;
+#X text 406 5 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 392 23 Gustavo Caparica // 7 9 9 1 0 2 0;
+#X text -1 355 cada parcial da um throw em soma;
+#X text -2 297 parcial = oscilador de freq = n*f0;
 #X connect 0 0 2 0;
 #X connect 0 0 6 0;
 #X connect 1 0 7 0;

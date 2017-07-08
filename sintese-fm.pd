@@ -1,4 +1,4 @@
-#N canvas 127 397 501 398 10;
+#N canvas 490 429 501 398 10;
 #X obj 84 6 inlet;
 #X obj 178 9 inlet;
 #X obj 152 329 outlet;
@@ -35,13 +35,18 @@
 #X text 274 267 harmonicidade;
 #X text 272 303 indice de modulação;
 #X obj 278 321 hsl 128 15 1 100 0 0 I empty empty -2 -8 0 10 -262144
--1 -1 3800 1;
+-1 -1 1300 1;
 #X obj 278 289 hsl 128 15 1 10 0 0 H empty empty -2 -8 0 10 -262144
--1 -1 7700 1;
+-1 -1 4400 1;
 #X obj 417 320 tgl 15 0 amp-mod empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X text 276 251 Síntese FM;
 #X obj 12 118 phasor~;
+#X text 220 214 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 220 228 Gustavo Caparica // 7 9 9 1 0 2 0;
+#X text 209 147 soma de um oscilador central com;
+#X text 212 164 outro oscilador de frequencia multipla;
+#X text 219 181 da central;
 #X connect 0 0 5 0;
 #X connect 0 0 2 0;
 #X connect 1 0 10 0;

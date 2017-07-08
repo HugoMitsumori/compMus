@@ -74,6 +74,8 @@
 #X connect 10 3 6 0;
 #X restore 118 311 pd FIR-espectro;
 #X obj 118 282 r fir-size;
+#X text 432 4 Hugo Mitsumori // 8 9 4 1 2 6 2;
+#X text 418 22 Gustavo Caparica // 7 9 9 1 0 2 0;
 #X connect 0 0 33 0;
 #X connect 6 0 7 0;
 #X connect 7 0 9 0;
