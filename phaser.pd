@@ -1,4 +1,4 @@
-#N canvas 3176 213 714 851 10;
+#N canvas 3203 35 634 1381 10;
 #X obj 42 132 rpole~;
 #X obj 42 107 rzero_rev~;
 #X obj 42 181 rpole~;
@@ -26,14 +26,14 @@
 #X obj 42 353 rzero_rev~;
 #X obj 80 409 r wet-phaser;
 #X obj 221 408 r wet-phaser;
-#X obj 311 117 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 317 122 hsl 168 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 310 89 hsl 128 15 0 1 0 0 wet-phaser empty empty -2 -8 0 10
+#X obj 340 84 hsl 128 15 0 1 0 0 wet-phaser empty empty -2 -8 0 10
 -262144 -1 -1 0 1;
-#X text 444 116 freq;
-#X text 307 70 Dry;
-#X text 417 70 Wet;
-#X text 309 51 Phaser;
+#X text 313 104 freq;
+#X text 337 65 Dry;
+#X text 447 65 Wet;
+#X text 387 51 Phaser;
 #X text 372 5 Hugo Mitsumori // 8 9 4 1 2 6 2;
 #X text 358 23 Gustavo Caparica // 7 9 9 1 0 2 0;
 #X text 203 166 baseado no exemplo H15;

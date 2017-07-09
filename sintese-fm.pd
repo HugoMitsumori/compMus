@@ -1,4 +1,4 @@
-#N canvas 3311 322 635 845 10;
+#N canvas 2961 237 635 845 10;
 #X obj 84 6 inlet;
 #X obj 178 9 inlet;
 #X obj 19 349 outlet~;
@@ -9,7 +9,7 @@
 #X obj 247 10 r I;
 #X obj 13 81 f;
 #X obj 28 326 tabwrite~ wave;
-#X obj 50 306 metro 100;
+#X obj 54 297 metro 100;
 #X obj 12 145 +~;
 #X obj 95 121 osc~;
 #X obj 6 205 cos~;
@@ -18,10 +18,10 @@
 #X obj 204 119 pack 0 50;
 #X obj 205 95 / 100;
 #X obj 126 85 int;
-#X obj 63 260 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 74 233 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 54 209 r sintese;
-#X obj 62 235 == 2;
+#X obj 65 182 r sintese;
+#X obj 73 208 == 2;
 #X obj 206 72 *;
 #X obj 245 64 expr if($f2 == 1 \, $f1 \, 1);
 #X obj 373 8 r amp-mod;
@@ -31,9 +31,9 @@
 #X obj 271 251 cnv 15 168 88 empty empty empty 20 12 0 14 -232941 -66577
 0;
 #X obj 278 321 hsl 128 15 1 100 0 0 I empty empty -2 -8 0 10 -262144
--1 -1 1800 1;
+-1 -1 0 1;
 #X obj 278 289 hsl 128 15 1 10 0 0 H empty empty -2 -8 0 10 -262144
--1 -1 4500 1;
+-1 -1 0 1;
 #X obj 418 302 tgl 15 0 amp-mod empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 12 118 phasor~;
@@ -45,9 +45,13 @@
 #X text 324 251 Sintese FM;
 #X text 273 271 harmonicidade (H);
 #X text 273 306 indice de modulação (I);
+#X obj 56 254 *;
+#X obj 9 51 s fm-amp;
+#X obj 244 41 r fm-amp;
+#X obj 18 226 r fm-amp;
 #X connect 0 0 3 0;
 #X connect 1 0 8 0;
-#X connect 3 0 23 0;
+#X connect 3 0 41 0;
 #X connect 3 1 8 0;
 #X connect 4 0 18 0;
 #X connect 4 0 26 0;
@@ -66,8 +70,7 @@
 #X connect 16 0 15 0;
 #X connect 17 0 16 0;
 #X connect 18 0 5 1;
-#X connect 19 0 10 0;
-#X connect 19 0 6 1;
+#X connect 19 0 40 1;
 #X connect 20 0 21 0;
 #X connect 21 0 19 0;
 #X connect 22 0 17 0;
@@ -76,4 +79,8 @@
 #X connect 25 0 5 0;
 #X connect 26 0 25 0;
 #X connect 31 0 11 0;
+#X connect 40 0 6 1;
+#X connect 40 0 10 0;
+#X connect 42 0 23 0;
+#X connect 43 0 40 0;
 #X coords 0 -1 1 1 170 90 1 270 250;
