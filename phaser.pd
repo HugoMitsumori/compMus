@@ -1,4 +1,4 @@
-#N canvas 3203 35 634 1381 10;
+#N canvas 3201 31 589 597 10;
 #X obj 42 132 rpole~;
 #X obj 42 107 rzero_rev~;
 #X obj 42 181 rpole~;
