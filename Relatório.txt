@@ -5,7 +5,7 @@ Módulos implementados:
 - Controle: Leitor de arquivo MIDI e Sequenciador
 - Sintese: VCO, Sintese FM, Sintese Aditiva (Fourier) e Sintese Karplus-Strong
 - Envelope: ADSR
-- Efeitos: FIR, Auto Wah, Phaser
+- Efeitos: FIR, Auto Wah, Phaser, Reverb
 
 Músicas MIDI de https://musescore.com/
 
@@ -51,3 +51,5 @@ Phaser
 - Adicionados mais sinais para aumentar o nível do efeito
 - Adicionados controles interativos para variação do efeito
 
+Reverb
+- Baseado no help do [freeverb~]
